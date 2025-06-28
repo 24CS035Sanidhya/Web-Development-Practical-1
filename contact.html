@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #0b68ba;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      flex: 1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Contact Section */
+    .content {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .content h2 {
+      font-size: 32px;
+      color: #0b68ba;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-item {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .contact-item strong {
+      color: #0b68ba;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        width: 100%;
+      }
+
+      nav ul li a {
+        display: block;
+        width: 100%;
+      }
+
+      .content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Student Portal</div>
+    <ul>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="attendance.html">Attendance</a></li>
+      <li><a href="timetable.html">Time Table</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="leave.html">Medical Leave</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="logout.html">logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2>Contact Information</h2>
+    <div class="contact-box">
+      <div class="contact-item">
+        <strong>Email:</strong> abc@gmail.com
+      </div>
+      <div class="contact-item">
+        <strong>Mobile:</strong> +91 91432XXXXX
+      </div>
+    </div>
+  </div>
+</body>
+</html>
